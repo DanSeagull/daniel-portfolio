@@ -1,7 +1,5 @@
 # QA Portfolio
 
----
-
 ### 👋 About Me
 Hi! I'm Daniel, a passionate Fullstack QA Engineer.
 
