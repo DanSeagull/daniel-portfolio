@@ -1,9 +1,9 @@
 # QA Portfolio
 
-### 👋 About Me
-Hi! I'm Daniel, a passionate Fullstack QA Engineer.
+### About Me
+Hi! I'm Daniel, a Fullstack QA Engineer.
 
-### 🛠️ Skills
+### Skills
 - Manual Testing (Functional, Regression, Exploratory)
 - Auto Testing (API & UI autotests, Playwright, Selenium, Appium, Puthon/Java)
 - Web & Mobile Testing
@@ -12,7 +12,9 @@ Hi! I'm Daniel, a passionate Fullstack QA Engineer.
 - Test Case Design
 - Basic SQL
 
-### 📁 What's Inside
+### What's Inside
+| Folder | Description |
+|--------|-------------|
 | `bug-reports/` | Sample bug reports with steps and screenshots |
 | `test-cases/` | Test cases and checklists |
 | `test-plan/` | Full test plan example |
