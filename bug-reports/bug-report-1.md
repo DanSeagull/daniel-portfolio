@@ -29,4 +29,5 @@
 
 **Логи (console):**  
 [LocationManager] didUpdateLocations: accuracy = 245m (ожидалось < 100m)
+
 [CoreLocation] kCLErrorDomain: 0 (но задержка 8 сек)
