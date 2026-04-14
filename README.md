@@ -5,7 +5,7 @@ Hi! I'm Daniel, a Fullstack QA Engineer.
 
 ### Skills
 - Manual Testing (Functional, Regression, Exploratory)
-- Auto Testing (API & UI autotests, Playwright, Selenium, Appium, Puthon/Java)
+- Auto Testing (API & UI autotests, Playwright, Selenium, Appium, Python/Java)
 - Web & Mobile Testing
 - API Testing (Postman)
 - Bug Tracking
