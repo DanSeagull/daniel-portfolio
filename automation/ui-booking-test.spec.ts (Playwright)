@@ -1,1 +1,42 @@
+// UI автотест для Яндекс Go (TypeScript + Playwright)
+// Критический путь: выбор адресов → вызов такси
 
+import { test, expect } from '@playwright/test';
+
+test.describe('Яндекс Go — вызов такси', () => {
+  
+  test.beforeEach(async ({ page }) => {
+    await page.goto('https://test.go.yandex/'); 
+    await page.waitForSelector('[data-testid="map-canvas"]');
+  });
+
+  test('Успешный вызов такси через UI', async ({ page }) => {
+    // Клик по полю "Откуда"
+    await page.click('[data-testid="pickup-input"]');
+    await page.fill('[data-testid="pickup-input"]', 'Москва, Тверская 1');
+    await page.keyboard.press('Enter');
+    
+    // Выбрать первую подсказку
+    await page.click('[data-testid="suggestion-0"]');
+    
+    // Поле "Куда"
+    await page.click('[data-testid="dropoff-input"]');
+    await page.fill('[data-testid="dropoff-input"]', 'Кремль');
+    await page.keyboard.press('Enter');
+    await page.click('[data-testid="suggestion-0"]');
+    
+    // Нажать заказать
+    await page.click('[data-testid="order-button"]');
+    
+    // Ожидание появления карточки водителя
+    await expect(page.locator('[data-testid="driver-card"]')).toBeVisible({ timeout: 15000 });
+    
+    // Проверка, что статус не "Ошибка"
+    const statusText = await page.textContent('[data-testid="order-status"]');
+    expect(statusText).not.toContain('Ошибка');
+  });
+  
+  test('Отмена заказа после начала поиска', async ({ page }) => {
+    // ... (аналогично, но с кликом на кнопку Cancel)
+  });
+});
