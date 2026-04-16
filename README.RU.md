@@ -1,30 +1,37 @@
 # Портфолио тестировщика
 
-Привет! Меня зовут Даниил, я Fullstack QA Engineer.
+Привет! Меня зовут Даниил, я Fullstack QA Engineer(ручное + автоматизация + API + SQL).
+
+## О себе
+Тестирую мобильные и веб-приложения 4+ года. В портфолио — пример работы с приложением Яндекс Go и приложением SmartSky.
 
 ### Навыки
 - Ручное тестирование (функциональное, регрессионное, исследовательское)
-- Автоматизированное тестирование (API & UI автотесты, Playwright, Selenium, Appium, Python/Java)
+- Автоматизированное тестирование (API & UI автотесты, Playwright, Selenium, Appium, Python/Java/TS)
 - Тестирование веб и мобильных приложений
 - API тестирование (Postman)
 - Баг-трекинг
 - Создание тест-кейсов и чек-листов
 - Базовый SQL
 
-### Структура портфолио
-| Папка | Описание |
-|-------|----------|
-| `bug-reports/` | Примеры баг-репортов со скриншотами |
-| `test-cases/` | Тест-кейсы и чек-листы |
-| `test-plan/` | Пример тест-плана |
-| `api-testing/` | Коллекции Postman |
-| `sql-queries/` | Примеры SQL запросов |
+## Структура портфолио
+
+| Папка | Что внутри |
+|-------|-------------|
+| `test-plan/` | Тест-план для Яндекс Go (такси) |
+| `test-cases/` | Тест-кейсы (позитивные, негативные, AI) |
+| `bug-reports/` | баг-репорты (GPS, Алиса, платежи, UI) |
+| `api-testing/` | Postman-коллекция + Python автотесты API |
+| `sql-queries/` | Запросы на поиск дублей, проверку платежей |
+| `automation/` | UI-автотест на Playwright (критический путь) |
+| `checklists/` | Регрессионный чек-лист |
+| `screenshots/` | Скриншоты багов и логов |
+
+---
 
 ### 📬 Контакты
 - GitHub: https://github.com/DanSeagull
 - Email: daneelchaykin@gmail.com
 - LinkedIn: https://www.linkedin.com/in/daniil-chaykin
+- Telegram: @DanSeagull
 
----
-
-> 📌 This portfolio is constantly updated with new examples. | Портфолио постоянно пополняется новыми примерами.
