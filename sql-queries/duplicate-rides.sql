@@ -18,7 +18,7 @@ SELECT
     ABS(r.final_price - p.amount) AS difference
 FROM rides r
 JOIN payments p ON r.ride_id = p.ride_id
-WHERE ABS(r.final_price - p.amount) > 0.01  -- Допуск 1 копейка
+WHERE ABS(r.final_price - p.amount) > 0.01
   AND p.status = 'completed';
 
 
