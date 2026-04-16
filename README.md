@@ -25,7 +25,7 @@ I have been testing mobile and web applications for over 4 years. This portfolio
 | `bug-reports/` | Bug reports (GPS, Alice AI, payments, UI) |
 | `api-testing/` | Postman collection + Python API automation |
 | `sql-queries/` | Queries for duplicate detection, payment validation |
-| `automation/` | UI automation with Playwright (critical path) |
+| `automation/` | UI/API automations with Playwright (critical path) |
 | `checklists/` | Regression checklist |
 | `screenshots/` | Bug screenshots and logs |
 
