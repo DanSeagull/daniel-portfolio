@@ -23,7 +23,7 @@
 | `bug-reports/` | баг-репорты (GPS, Алиса, платежи, UI) |
 | `api-testing/` | Postman-коллекция + Python автотесты API |
 | `sql-queries/` | Запросы на поиск дублей, проверку платежей |
-| `automation/` | UI-автотест на Playwright (критический путь) |
+| `automation/` | UI/API-автотесты на Playwright (критический путь) |
 | `checklists/` | Регрессионный чек-лист |
 | `screenshots/` | Скриншоты багов и логов |
 
