@@ -14,7 +14,7 @@ HEADERS = {
     "X-Request-Id": str(uuid.uuid4())
 }
 
-# ========== ТЕСТОВЫЕ ДАННЫЕ ==========
+# ТЕСТОВЫЕ ДАННЫ
 TEST_USER = {
     "user_id": "test_qa_001",
     "phone": "+79991234567",
@@ -259,7 +259,7 @@ class TestIdempotencyAPI:
         )
         order_id_1 = resp1.json()["order_id"]
         
-        # Второй запрос (такой же)
+        # Второй запрос
         resp2 = requests.post(
             f"{BASE_URL}/orders/create",
             json={**TEST_RIDE, "user_id": TEST_USER["user_id"]},
@@ -269,7 +269,7 @@ class TestIdempotencyAPI:
         
         # Должен вернуть тот же заказ, а не создавать новый
         assert order_id_1 == order_id_2
-        assert resp2.status_code == 200  # Обычно 200 при повторном запросе
+        assert resp2.status_code == 200  # 200 при повторном запросе
 
 
 # ТЕСТЫ НА ВРЕМЯ
@@ -312,6 +312,5 @@ class TestTimingAPI:
         assert status != "pending", f"Status didn't change within {max_wait} seconds"
 
 
-# ЗАПУСК
 if __name__ == "__main__":
     pytest.main([__file__, "-v", "--tb=short"])
